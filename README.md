@@ -12,6 +12,15 @@ This vimux plugin runs the django tests on the current file/function.
 # Default keybindings
 
 F7 - Run tests on the file
+
+The default test command is
+
+    python manage.py test
+
+it can be configured using
+
+   let g:vimux_django_tests_cmd            = "python manage.py test --settings=settings.test"
+
 Shift+F7 - Run tests on the current function
 
 # TODO
